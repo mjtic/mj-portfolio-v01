@@ -4,7 +4,6 @@ import { useState } from 'react';
 
 const StyleNav = styled.div`
     position: relative;
-    
 `
 //transparent overlay to handle events
 const Overlay = styled.div`
@@ -25,9 +24,6 @@ const StyledNavButton = styled.div`
     overflow:hidden;
 
 `
-
-
-
 const Circle = styled.div`
     border: .125rem solid #1E1824;
     border-radius: 50%;
@@ -35,8 +31,6 @@ const Circle = styled.div`
     width: 1.5rem;
     height: 1.5rem;
     transition: all 0.25s ease-in-out;
-
-    
 `
 
 function NavButton({navMenu,setNavMenu}) {
