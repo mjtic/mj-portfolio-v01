@@ -144,10 +144,10 @@ function Menu({navMenu,setNavMenu}) {
     return (
         <StyledMenu>
             <StyledMenuWrapper>
-                <StyledMenuHome to={'/'} onClick={()=>setNavMenu(!navMenu)}>HOME</StyledMenuHome>
-                <StyledMenuWork to={'/work'} onClick={()=>setNavMenu(!navMenu)}>WORK</StyledMenuWork>
-                <StyledMenuAbout to={'/about'} onClick={()=>setNavMenu(!navMenu)}>ABOUT</StyledMenuAbout>
-                <StyledMenuContact to={'/contact'} onClick={()=>setNavMenu(!navMenu)}>CONTACT</StyledMenuContact>
+                <StyledMenuHome to='/' onClick={()=>setNavMenu(false)}>HOME</StyledMenuHome>
+                <StyledMenuWork to='/work' onClick={()=>setNavMenu(false)}>WORK</StyledMenuWork>
+                <StyledMenuAbout to='/about' onClick={()=>setNavMenu(false)}>ABOUT</StyledMenuAbout>
+                <StyledMenuContact to='/contact' onClick={()=>setNavMenu(false)}>CONTACT</StyledMenuContact>
             </StyledMenuWrapper>
         </StyledMenu>
     )

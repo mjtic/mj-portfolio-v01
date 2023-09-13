@@ -23,7 +23,7 @@ function Layout({navMenu,setNavMenu}) {
             <StyledLayout>  
             <Header navMenu={navMenu} setNavMenu={setNavMenu}/>
              <StyledMain>
-              {navMenu?<Menu/>:<Outlet />}
+              {navMenu?<Menu navMenu={navMenu} setNavMenu={setNavMenu}/>:<Outlet />}
              </StyledMain>
             
             

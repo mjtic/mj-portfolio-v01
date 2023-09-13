@@ -1,0 +1,11 @@
+{
+  "files": {
+    "main.js": "/mj-portfolio-v01/static/js/main.582235e0.js",
+    "static/media/mj-resume.pdf": "/mj-portfolio-v01/static/media/mj-resume.dd2ae18a689f62afd2b9.pdf",
+    "index.html": "/mj-portfolio-v01/index.html",
+    "main.582235e0.js.map": "/mj-portfolio-v01/static/js/main.582235e0.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.582235e0.js"
+  ]
+}

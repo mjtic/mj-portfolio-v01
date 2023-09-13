@@ -145,7 +145,8 @@ const StyledMediaAnchorWrapper = styled.div`
 `
 
 
-function Contact() {
+function Contact({setNavMenu}) {
+    setNavMenu(false);
     useEffect(()=>{
         animate(
             '.stagger-contact',

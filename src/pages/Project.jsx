@@ -257,7 +257,8 @@ border-radius: 2rem;
 
 
 
-function Project({projectLists, currentProject}) {
+function Project({projectLists, currentProject, setNavMenu}) {
+    setNavMenu(false);
     const project = projectLists.filter(project=>project.Id === currentProject)[0]
     console.log(project);
   

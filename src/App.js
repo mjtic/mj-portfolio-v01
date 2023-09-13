@@ -12,9 +12,6 @@ import Work from "./pages/Work";
 import Project from "./pages/Project";
 import Contact from "./pages/Contact";
 
-
-
-
 //reset only
 //16px*62.5% = 1rem;
 const GlobalStyle = createGlobalStyle`
@@ -81,41 +78,36 @@ function App() {
   const [currentProject, setCurrentProject] = useState(1);
   const [navMenu, setNavMenu] = useState(false);
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/mj-portfolio-v01">
       <GlobalStyle />
-      <Overlay />
-      <Routes>
-        <Route 
-          element={
-          <Layout 
-            navMenu={navMenu} 
-            setNavMenu={setNavMenu}
-          />
-          }
-          >
-          <Route element={<Home />} index />
-          <Route element={<About />} path="about" />
-          <Route
+        <Overlay />
+          <Routes>
+           <Route element={<Layout navMenu={navMenu} setNavMenu={setNavMenu}/>}> 
+            <Route element={<Home  setNavMenu={setNavMenu}/>} path="/"  />
+            <Route element={<About  setNavMenu={setNavMenu}/>} path="/about" />
+            <Route
             element={
               <Work
                 projectLists={projectLists}
                 currentProject={currentProject}
                 setCurrentProject={setCurrentProject}
                 navMenu={navMenu}
+                setNavMenu={setNavMenu}
               />
             }
-            path="work"
-          />
-          <Route
+            path="/work"
+            />
+            <Route
             element={
               <Project
                 projectLists={projectLists}
                 currentProject={currentProject}
+                setNavMenu={setNavMenu}
               />
             }
-            path="project"
+            path="/project"
           />
-          <Route element={<Contact />} path="contact" />
+          <Route element={<Contact  setNavMenu={setNavMenu} />} path="/contact" />
         </Route>
       </Routes>
     </BrowserRouter>

@@ -153,7 +153,8 @@ const StyledIntroFooter2 = styled(Link)`
 
 //    transform: translateY(-20rem);
 
-function Home() {
+function Home({setNavMenu}) {
+    setNavMenu(false);
     useEffect(() => {
         animate(
           '.stagger-motion',

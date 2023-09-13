@@ -41,10 +41,8 @@ const Circle = styled.div`
 
 function NavButton({navMenu,setNavMenu}) {
     const [isHovered, setIsHovered] = useState(false);
-    const [isClicked, setIsClicked] = useState(false);
 
     function handleClick(){
-        setIsClicked(!isClicked);
         setNavMenu(!navMenu);
     }
 
@@ -55,16 +53,16 @@ function NavButton({navMenu,setNavMenu}) {
         <Overlay onMouseEnter={()=>setIsHovered(true)} onMouseLeave={()=>setIsHovered(false)} onClick={handleClick}></Overlay>
 
         <StyledNavButton >
-            <Circle id='1' style={isClicked ? {transform:'translate(-100%,-100%)', left: '0'} : {left:'0'}}> </Circle>
-            <Circle id='2' style={isClicked? {transform:'translate(-50%, -100%)',left:'50%'}:isHovered ? {transform:'translate(-50%, -100%)',left:'50%'} : {transform:'translateX(-50%)',left:'50%'}}></Circle>
-            <Circle id='3' style={isClicked ? {transform:'translate(100%,-100%)',right:'0'} :{right:'0'}}></Circle>
-            <Circle id='4' style={isClicked? {top:'50%',transform:'translate(-100%, -50%)'} :isHovered ? {top:'50%',transform:'translate(-100%, -50%)'} :{top:'50%',transform:'translateY(-50%)'}}></Circle>
-            <Circle id='5-1' style={isClicked?{left:'50%', transform:'translate(-50%, -50%) rotate(135deg)',top:'50%', width:'100%', borderRadius:'1rem'} :isHovered ? {left:'50%', transform:'translate(-50%, -50%)',top:'50%', width:'100%', borderRadius:'1rem'} :{left:'50%', transform:'translate(-50%, -50%)',top:'50%', opacity:'0'} }></Circle>
-            <Circle id='5-2' style={isClicked?{left:'50%', transform:'translate(-50%, -50%) rotate(135deg)',top:'50%', height:'100%', borderRadius:'1rem'} :isHovered ? {left:'50%', transform:'translate(-50%, -50%)',top:'50%', height:'100%', borderRadius:'1rem'}:{left:'50%', transform:'translate(-50%, -50%)',top:'50%'}}></Circle>
-            <Circle id='6' style={isClicked?{right:'0', top:'50%', transform:'translate(100%,-50%)'} : isHovered ? {right:'0', top:'50%', transform:'translate(100%,-50%)'} : {right:'0', top:'50%', transform:'translateY(-50%)'}}></Circle>
-            <Circle id='7' style={isClicked ? {transform:'translate(-100%,100%)', bottom:'0'}:{bottom:'0'}}></Circle>
-            <Circle id='8' style={isClicked ? {bottom:'0', left:'50%', transform:'translate(-50%, 100%)'} :isHovered ? {bottom:'0', left:'50%', transform:'translate(-50%, 100%)'} : {bottom:'0', left:'50%', transform:'translateX(-50%)'}}></Circle>
-            <Circle id='9' style={isClicked ? {transform:'translate(100%,100%)', bottom:'0', right:'0'}:{bottom:'0', right:'0'}}></Circle>
+            <Circle id='1' style={navMenu ? {transform:'translate(-100%,-100%)', left: '0'} : {left:'0'}}> </Circle>
+            <Circle id='2' style={navMenu? {transform:'translate(-50%, -100%)',left:'50%'}:isHovered ? {transform:'translate(-50%, -100%)',left:'50%'} : {transform:'translateX(-50%)',left:'50%'}}></Circle>
+            <Circle id='3' style={navMenu ? {transform:'translate(100%,-100%)',right:'0'} :{right:'0'}}></Circle>
+            <Circle id='4' style={navMenu? {top:'50%',transform:'translate(-100%, -50%)'} :isHovered ? {top:'50%',transform:'translate(-100%, -50%)'} :{top:'50%',transform:'translateY(-50%)'}}></Circle>
+            <Circle id='5-1' style={navMenu?{left:'50%', transform:'translate(-50%, -50%) rotate(135deg)',top:'50%', width:'100%', borderRadius:'1rem'} :isHovered ? {left:'50%', transform:'translate(-50%, -50%)',top:'50%', width:'100%', borderRadius:'1rem'} :{left:'50%', transform:'translate(-50%, -50%)',top:'50%', opacity:'0'} }></Circle>
+            <Circle id='5-2' style={navMenu?{left:'50%', transform:'translate(-50%, -50%) rotate(135deg)',top:'50%', height:'100%', borderRadius:'1rem'} :isHovered ? {left:'50%', transform:'translate(-50%, -50%)',top:'50%', height:'100%', borderRadius:'1rem'}:{left:'50%', transform:'translate(-50%, -50%)',top:'50%'}}></Circle>
+            <Circle id='6' style={navMenu?{right:'0', top:'50%', transform:'translate(100%,-50%)'} : isHovered ? {right:'0', top:'50%', transform:'translate(100%,-50%)'} : {right:'0', top:'50%', transform:'translateY(-50%)'}}></Circle>
+            <Circle id='7' style={navMenu ? {transform:'translate(-100%,100%)', bottom:'0'}:{bottom:'0'}}></Circle>
+            <Circle id='8' style={navMenu ? {bottom:'0', left:'50%', transform:'translate(-50%, 100%)'} :isHovered ? {bottom:'0', left:'50%', transform:'translate(-50%, 100%)'} : {bottom:'0', left:'50%', transform:'translateX(-50%)'}}></Circle>
+            <Circle id='9' style={navMenu ? {transform:'translate(100%,100%)', bottom:'0', right:'0'}:{bottom:'0', right:'0'}}></Circle>
         </StyledNavButton>
      
         </StyleNav>

@@ -144,7 +144,8 @@ const StyledAboutStory = styled.p`
  height: 80%;
 
 `
-function About() {
+function About({setNavMenu}) {
+    setNavMenu(false);
     useEffect(()=>{
         animate('.about-stagger',
         {y:[-1000,-20],opacity:[0,1]},
