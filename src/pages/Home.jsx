@@ -15,9 +15,11 @@ const StyledIntroWrapper = styled.div`
     align-items: center;
     text-align: center;
     height: 75%;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
-
+    @media ${device.laptopL}{
+        height: 85%;
+    }
 `
 
 
@@ -26,42 +28,56 @@ const StyledIntroHeading = styled.h1`
     font-family: 'Bodoni Moda', serif;
     font-size: 3.2rem;
     line-height: 9.4rem;
-    letter-spacing: 2.5rem;
+    letter-spacing: 1.20rem;
     font-weight: 400;
     @media ${device.laptopL} and (orientation:landscape){
-        letter-spacing: 17.6px;
-    }
-
+        letter-spacing: 12px;
+    };
     @media ${device.laptop}{
-        letter-spacing: 16px;
-    }
+        letter-spacing: 10px;
+    };
     @media ${device.tabletL}{
-        letter-spacing: 13px;
-    }
+        letter-spacing: 10px;
+    };
     @media ${device.tabletM}{
-        letter-spacing: 11px;
+        letter-spacing: 10px;
+    };
+    @media ${device.tabletS}{
+        letter-spacing: 10px;
+    };
+    @media screen and (max-width:714px){
+        letter-spacing: 9px;
+    };
+    @media screen and (max-width:635px){
+        letter-spacing: 8px;
+    };
+    @media screen and (max-width:635px){
+        letter-spacing: 7px;
+    };
+    @media screen and (max-width:519px){
+        letter-spacing: 6px;
+    };
+    @media screen and (max-width:457px){
+        letter-spacing: 5px;
+    };
+    @media ${device.mobileM}{
+        letter-spacing: 4px;
+    };
+    @media ${device.mobileS}{
+        letter-spacing: 3.5px;
     }
     
-    @media ${device.tabletS}{
-        letter-spacing: 6px;
-    }
 
 
-
-    @media ${device.mobileL}{
-        letter-spacing: 4px;
-    }
-    @media ${device.mobileM}{
-        letter-spacing: 3px;
-    }
 
 `
 const StyledIntroBody = styled.p`
     font-family: 'PT Sans Narrow', sans-serif;
     line-height: 9.4rem;
     font-size: 4.6rem;
-    letter-spacing: 2rem;
+    letter-spacing: 1.20rem;
     margin-bottom: 5rem;
+
 
 `
 const StyledIntroSpan1 = styled.span`
@@ -69,7 +85,7 @@ const StyledIntroSpan1 = styled.span`
     font-family: 'Bodoni Moda', serif;
     font-weight: 600;
     font-style: italic;
-    letter-spacing: -0.5rem;
+    letter-spacing: -0.15rem;
     font-size: 4.6rem;
 
 `
@@ -80,6 +96,7 @@ const StyledIntroSpan2 = styled.span`
     font-style: italic;
     letter-spacing: -0.15rem;
     font-size: 4.6rem;
+
 
 `
 const StyledIntroSpan3 = styled.span`
@@ -102,6 +119,9 @@ const StyledIntroFooter1 = styled(Link)`
     text-decoration: none;
     color: #1E1824;
     position: relative;
+
+
+
     &::before{
         content: '';
         position: absolute;
@@ -130,6 +150,7 @@ const StyledIntroFooter2 = styled(Link)`
     text-decoration: none;
     color: #1E1824;
     position: relative;
+
     &::before{
         content: '';
         position: absolute;

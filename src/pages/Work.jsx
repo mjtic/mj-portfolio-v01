@@ -17,15 +17,18 @@ const StyledWorkGridWrapper = styled.div`
     justify-content: space-between;
     align-items: center;
     align-content: center;
-    margin-top: 22rem;
-    @media ${device.laptop}{
+    margin-top: 16.5rem;
+    
+    @media screen and (max-width: 1136px){
         display:flex;
         flex-direction: column;
         justify-content: center;
-        height: auto;
+        height: 100%;
+        width: 100%;
         margin: 0 auto;
-        
-    }
+    };
+
+
 
 
 `
@@ -33,22 +36,159 @@ const StyledWorkGridWrapper = styled.div`
 const StyledGridLeft = styled.img`
 background-repeat: no-repeat;
 background-size:cover;
-height: 50%;
-width: 50%;
+height: 55%;
+width: 40%;
 border-radius: 0  3rem 3rem 0;
 filter: blur(.135rem);
 background-position: center;
+@media screen and (max-width:2100px){
+    height: 50%;
+    width: 40%;
+};
+@media screen and (max-width:1800px){
+    height: 45%;
+    width: 40%;
+};
+@media screen and (max-width:1600px){
+    height: 43%;
+    width: 40%;
+};
+@media screen and (max-width: 1279px){
+    width: 37%;
+    height: 40%;
+};
+@media screen and (max-width: 1211px){
+    width: 35%;
+    height: 40%;
+};
+@media screen and (max-width: 1136px){
+    width: 70%;
+    height: 60%;
+};
+@media screen and (max-width: 1130px){
+    width: 68%;
+    height: 60%;
+}
+@media ${device.laptop}{
+    width: 70%;
+    height: 40%;
+};
+@media${device.tabletL}{
+    height: 40%;
+    width: 65%;
+};
+@media${device.tabletM}{
+    height: 40%;
+    width: 65%;
+};
+@media${device.tabletS}{
+    height: 40%;
+    width: 60%;
+};
+@media screen and (max-width:665px){
+    height: 40%;
+    width: 55%;
+};
+@media screen and (max-width:580px){
+    height: 40%;
+    width: 50%;
+};
+@media screen and (max-width:520px){
+    height: 40%;
+    width: 45%;
+};
+@media screen and (max-width:435px){
+    height: 40%;
+    width: 40%;
+}
+@media ${device.mobileL}{
+    height: 35%;
+    width: 55%;
+}
 
+@media screen and (max-width: 398px){
+    height: 35%;
+    width: 50%;
+}
 `
 //GridRight-Project Lists
 const StyledGridRight = styled.div`
-    width: 46.5%;
+    width: 49%;
     height: 100%;
     margin-top: 8rem;
-    @media${device.laptop}{
-        height: 55%;        
+    @media screen and (max-width:2462px){
+        width: 41%;
+        height: 90%;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+    @media screen and (max-width:1708px){
+        width: 45%;
+        height: 100%;
     }
 
+    @media screen and (max-width:1557px){
+        width: 49%;
+        height: 100%;
+    }
+    @media screen and (max-width: 1384px){
+        width: 50%;
+        height: 100%;
+    }
+    @media screen and (max-width: 1356px){
+        width: 53%;
+        height: 100%;
+    }
+    @media screen and (max-width: 1279px){
+        width: 56%;
+        height: 100%;
+    }
+    @media screen and (max-width: 1211px){
+        width: 60%;
+        height: 100%;
+    }
+    @media screen and (max-width: 1130px){
+        width: 64%;
+        height: 100%;
+    }
+    @media screen and (max-width: 1059px){
+        width: 68%;
+        height: 100%;
+    }
+    @media${device.laptop}{
+        height: 55%;
+        width: 90%;   
+    };
+    @media ${device.tabletL}{
+        width: 90%;
+        height: 60%;
+    };
+    @media screen and (max-width: 863px){
+        width: 70%;
+        heigth: 60%;
+    }
+    @media ${device.tabletM}{
+        width: 75%;
+        height: 60%;
+    };
+    @media screen and (max-width:520px){
+        width: 85%;
+        height: 60%;
+    };
+    @media screen and (max-width:454px){
+        width: 90%;
+        height: 60%;
+    };
+    @media ${device.mobileL}{
+        width: 60%;
+        height: 65%;
+    
+}
+
+
+
+ 
 `
 //Work Page Title
 const StyledWorkTitle = styled.h1`
@@ -57,7 +197,6 @@ const StyledWorkTitle = styled.h1`
     font-size: 6rem;
     line-height: 5rem;
     letter-spacing:1rem;
-    margin-bottom: 6rem;
 `
 //Work unorder list
 const StyledUl = styled.ul`
@@ -70,46 +209,43 @@ width: 90%;
 overflow-y: auto;
 height: 90%;
 scroll-behavior: smooth;
+justify-content: space-between;
+
+
 `
 //Work lists - project name
 const StyledLi = styled(Link)`
 font-family: 'Bodoni Moda', serif;
 font-weight: 400;
 font-size: 4.6rem;
-line-height: 9rem;
-letter-spacing: 2rem;
-margin-bottom: 2rem;
+line-height: 5rem;
+letter-spacing: 1rem;
 display: inherit;
 justify-content: space-between;
 flex-wrap: wrap;
 text-decoration: none;
 color: #1E1824;
     @media ${device.laptop}{
-        font-size: 40px;
-        letter-spacing: 10px;
-    };
-    @media ${device.tabletL}{
-        font-size: 38px;
-        letter-spacing: 8px;
-    };
-    @media ${device.tabletM}{
-        font-size: 38px;
         letter-spacing: 5px;
     };
-    @media ${device.tabletS}{
-        font-size: 37px;
+    @media ${device.tabletL}{
         letter-spacing: 4px;
     };
-    @media ${device.mobileL}{
-        font-size: 22px;
-        letter-spacing: 1px;
+    @media ${device.tabletM}{
+        letter-spacing: 3px;
     };
+    @media ${device.mobileL}{
+        letter-spacing: 1px;
+        
+    };
+
+
     @media ${device.mobileM}{
-        font-size: 20px;
+
         letter-spacing: 1px;
     }
     @media ${device.mobileS}{
-        font-size: 16px;
+ 
         letter-spacing: 1px;
     }
 
@@ -122,28 +258,28 @@ letter-spacing:1rem;
 font-size: 2rem;
 border-bottom: .3rem #225062 solid;
 @media ${device.laptop}{
-    font-size: 14px;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
 };
 @media ${device.tabletL}{
-    font-size: 13px;
-    letter-spacing: 4px;
+    letter-spacing: 3px;
 };
 @media ${device.tabletM}{
-    font-size: 12px;
     letter-spacing: 3px;
-}
+};
+
+
 
 @media ${device.mobileL}{
-    font-size: 8px;
+
     letter-spacing: 1px;
 };
 @media ${device.mobileM}{
-    font-size: 7px;
+
     letter-spacing: 1px;
-}
+};
+
 @media ${device.mobileS}{
-    font-size: 5px;
+
     letter-spacing: 1px;
 }
 `

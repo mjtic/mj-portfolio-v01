@@ -37,6 +37,7 @@ const StyledAboutGridLeft = styled.div`
         justify-content: center;
         align-items: center;
     }
+    
 `
 
 const StyledAboutGridRight = styled.img`

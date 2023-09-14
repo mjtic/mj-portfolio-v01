@@ -4,7 +4,7 @@ export const projectLists = [
     {
       Id: 1,
       Project: "Plan-Tracker",
-      Technology: ["REACT.JS|", "MOGO-DB|", " JAVASCRIPT-APPLICATION"],
+      Technology: ["REACT.JS |", " MOGO-DB |", " JAVASCRIPT APP"],
       Pictures: [
         {
           Title: "Title-Page",
@@ -62,7 +62,7 @@ export const projectLists = [
     {
       Id: 2,
       Project: "US-OpenCourts",
-      Technology: ["HANDLEBARS|", "MYSQL|", "JAVASCRIPT-APPLICATION"],
+      Technology: ["HANDLEBARS |", " MYSQL | ", " JAVASCRIPT APP"],
       Pictures: [
         {
           Title: "Title-Page",
@@ -108,7 +108,7 @@ export const projectLists = [
     {
       Id: 3,
       Project: "QuikRecipe",
-      Technology: "THIRD-PARTY-API | JAVASCRIPT-APPLICATION",
+      Technology: "THIRD-PARTY-API | JAVASCRIPT APP",
       Pictures: [
         {
           Title: "Title-Page",

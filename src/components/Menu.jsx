@@ -9,29 +9,38 @@ const StyledMenu = styled.section`
     
     @media ${device.laptopL}{
         margin-top: 180px;
-       }
+       };
     @media ${device.laptop}{
-        margin-top: 130px;
-       }
+        margin-top: 150px;
+       };
+    @media ${device.tabletL} and (orientation: portrait){
+          margin-top: 290px;
+      };
+      @media ${device.tabletL} and (orientation: landscape){
+          margin-top: 280px;
+      };
+      @media ${device.tabletM} and (orientation: portrait){
+        margin-top: 250px;
+    };
+    @media ${device.tabletM} and (orientation: landscape){
+        margin-top: 275px;
+    };
 
-    @media ${device.tabletL}{
+    @media ${device.tabletS} and (orientation: portrait){
         margin-top: 250px;
-    }
-    @media ${device.tabletM}{
-        margin-top: 220px;
-    }
-    @media ${device.tabletS}{
-        margin-top: 220px;
-    }
+    };
+    @media ${device.tabletS} and (orientation: landscape){
+        margin-top: 250px;
+    };
     @media ${device.mobileL}{
-        margin-top: 250px;
-    }
+        margin-top: 270px;
+    };
     @media ${device.mobileM}{
-        margin-top: 160px;
-    }
+        margin-top: 190px;
+    };
     @media ${device.mobileS}{
         margin-top: 140px;
-    }
+    };
 `
 
 const StyledMenuWrapper = styled.div`
