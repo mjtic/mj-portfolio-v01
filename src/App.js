@@ -25,89 +25,28 @@ const GlobalStyle = createGlobalStyle`
   @media ${device.laptopL}{
     font-size: 60.5%;
   };
-  @media screen and ${device.laptop}{
+  @media${device.laptop}{
     font-size: 56%;
-  };
-  @media ${device.tabletL} and (orientation: portrait){
+  }
+  @media ${device.tabletL}{
     font-size: 56%;  
   };
-  @media ${device.tabletL} and (orientation: landscape){
-    font-size: 56%;  
-  };
-  @media ${device.tabletM} and (orientation: portrait){
+  @media ${device.tabletM}{
     font-size: 55%;  
   };
-  @media ${device.tabletM} and (orientation: landscape){
-    font-size: 55%;  
-  };
-  @media ${device.tabletS} and (orientation: portrait){
+  @media ${device.tabletS}{
     font-size: 54%;  
   };
-  @media ${device.tabletS} and (orientation: landscape){
-    font-size: 70%;  
-  };
-
-  @media screen and (max-width: 747px){
-    font-size: 52%;
-  };
-
-  @media screen and (max-width: 730px) {
-    font-size: 50%;
-  };
-  @media screen and (max-width: 714px){
-    font-size: 48%;
-  };
-  @media screen and (max-width: 697px) {
-    font-size: 44%;
-  };
-  @media screen and (max-width: 635px){
-    font-size: 40%;
-  };
-  @media screen and (max-width: 573px) {
-    font-size: 37%;
-  };
-  @media screen and (max-width: 519px) {
-    font-size: 33%;
-  };
-  @media screen and (max-width: 457px) {
-    font-size: 29%;
-  };
-  @media ${device.mobileL} and (orientation: portrait){
-    font-size: 30%;  
-  };
-  @media ${device.mobileL} and (orientation: landscape){
-    font-size: 25%%;  
-  };
-  @media screen and (max-width: 412px){
-    font-size: 29%;
-  };
-  @media screen and (max-width: 398px){
-    font-size: 28%;
-  };
-  @media screen and (max-width: 387px){
-    font-size: 27%;
-  };
-  @media screen and (max-width: 378px){
-    font-size: 26%;
+  @media ${device.mobileL}{
+    font-size: 32%;  
   };
   @media ${device.mobileM}{
-    font-size: 25%;
-  };
-  @media screen and (max-width: 362px){
-    font-size: 24%;
-  };
-  @media screen and (max-width: 330px){
-    font-size: 22%;
-  };
-  @media ${device.mobileS}{
-    font-size: 21%;
-  };
-  @media screen and (max-width: 289px){
-    font-size: 20%;
-  };
-  @media screen and (max-width: 277px){
-    font-size: 19%;
+    font-size: 27%;
   }
+  @media ${device.mobileS}{
+    font-size: 24%;
+  }
+
 
 
   }&::-webkit-scrollbar{

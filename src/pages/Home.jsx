@@ -15,7 +15,7 @@ const StyledIntroWrapper = styled.div`
     align-items: center;
     text-align: center;
     height: 75%;
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
     @media ${device.laptopL}{
         height: 85%;
@@ -28,43 +28,17 @@ const StyledIntroHeading = styled.h1`
     font-family: 'Bodoni Moda', serif;
     font-size: 3.2rem;
     line-height: 9.4rem;
-    letter-spacing: 1.20rem;
+    letter-spacing: 0.8rem;
     font-weight: 400;
-    @media ${device.laptopL} and (orientation:landscape){
-        letter-spacing: 12px;
-    };
     @media ${device.laptop}{
-        letter-spacing: 10px;
-    };
-    @media ${device.tabletL}{
-        letter-spacing: 10px;
-    };
-    @media ${device.tabletM}{
-        letter-spacing: 10px;
-    };
-    @media ${device.tabletS}{
-        letter-spacing: 10px;
-    };
-    @media screen and (max-width:714px){
-        letter-spacing: 9px;
-    };
-    @media screen and (max-width:635px){
         letter-spacing: 8px;
     };
-    @media screen and (max-width:635px){
-        letter-spacing: 7px;
+    @media${device.mobileL}{
+        letter-spacing: 3px;
+        line-height: 45px;
     };
-    @media screen and (max-width:519px){
-        letter-spacing: 6px;
-    };
-    @media screen and (max-width:457px){
-        letter-spacing: 5px;
-    };
-    @media ${device.mobileM}{
-        letter-spacing: 4px;
-    };
-    @media ${device.mobileS}{
-        letter-spacing: 3.5px;
+    @media${device.mobileS}{
+        letter-spacing: 1px;
     }
     
 
@@ -75,8 +49,19 @@ const StyledIntroBody = styled.p`
     font-family: 'PT Sans Narrow', sans-serif;
     line-height: 9.4rem;
     font-size: 4.6rem;
-    letter-spacing: 1.20rem;
+    letter-spacing: 1rem;
     margin-bottom: 5rem;
+    @media ${device.mobileL}{
+        letter-spacing: 4px;
+        line-height: 45px;
+        margin-bottom: 15px;
+    };
+    @media ${device.mobileM}{
+        letter-spacing: 3px;
+    };
+    @media${device.mobileS}{
+        letter-spacing: 1px;
+    };
 
 
 `
@@ -115,13 +100,18 @@ const StyledIntroFooter1 = styled(Link)`
     line-height: 4rem;
     letter-spacing: .5rem;
     display: inline-block;
-    margin-right: 15rem;
+    margin-right: 5rem;
     text-decoration: none;
     color: #1E1824;
     position: relative;
-
-
-
+    @media ${device.mobileL}{
+        margin-right: 5px;
+        letter-spacing: 1px;
+    };
+    @media${device.mobileS}{
+        letter-spacing: 0px;
+        margin-right: 1px;
+    };
     &::before{
         content: '';
         position: absolute;
@@ -150,7 +140,12 @@ const StyledIntroFooter2 = styled(Link)`
     text-decoration: none;
     color: #1E1824;
     position: relative;
-
+    @media ${device.mobileL}{
+        letter-spacing: 1px;
+    };
+    @media${device.mobileS}{
+        letter-spacing: 0px;
+    };
     &::before{
         content: '';
         position: absolute;

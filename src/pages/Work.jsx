@@ -280,7 +280,7 @@ border-bottom: .3rem #225062 solid;
 
 @media ${device.mobileS}{
 
-    letter-spacing: 1px;
+    letter-spacing: 0px;
 }
 `
 //used useEffect to operate animate,stagger from 'framer-motion'

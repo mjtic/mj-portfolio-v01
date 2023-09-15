@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import { useState } from 'react';
 
-
 const StyleNav = styled.div`
     position: relative;
 `
@@ -25,7 +24,7 @@ const StyledNavButton = styled.div`
 
 `
 const Circle = styled.div`
-    border: .125rem solid #1E1824;
+    border: .125rem solid #7A863B;
     border-radius: 50%;
     position: absolute;
     width: 1.5rem;

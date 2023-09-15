@@ -13,33 +13,26 @@ const StyledMenu = styled.section`
     @media ${device.laptop}{
         margin-top: 150px;
        };
-    @media ${device.tabletL} and (orientation: portrait){
+    @media ${device.tabletL}{
           margin-top: 290px;
       };
-      @media ${device.tabletL} and (orientation: landscape){
-          margin-top: 280px;
-      };
-      @media ${device.tabletM} and (orientation: portrait){
+      @media ${device.tabletM}{
         margin-top: 250px;
     };
-    @media ${device.tabletM} and (orientation: landscape){
-        margin-top: 275px;
+    @media screen and (max-width:800px){
+        margin-top: 70px;
     };
-
-    @media ${device.tabletS} and (orientation: portrait){
-        margin-top: 250px;
-    };
-    @media ${device.tabletS} and (orientation: landscape){
+    @media ${device.tabletS}{
         margin-top: 250px;
     };
     @media ${device.mobileL}{
-        margin-top: 270px;
+        margin-top: 200px;
     };
     @media ${device.mobileM}{
-        margin-top: 190px;
+        margin-top: 170px;
     };
     @media ${device.mobileS}{
-        margin-top: 140px;
+        margin-top: 160px;
     };
 `
 
