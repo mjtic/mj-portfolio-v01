@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+# "MJ-Portfolio-v01"
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
 
-## Available Scripts
+![Screenshot](./public/mj-portfolio-v01-homepage.png)
 
-In the project directory, you can run:
+A portfolio designed using Figma, powered by React and styled-components. Front-end only appliceation, and all animations are made using CSS and framer-motion. 
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Table of Contents
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- [Installation](#installation)
+- [Usage](#usage)
+- [Credits](#credits)
+- [Collaboration](#collaboration)
+- [Questions](#questions)
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation
 
-### `npm run build`
+You can simply download/clone the app from its repo to install.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To clone, run the following command in your terminal:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
+   git clone https://github.com/mjtic/mj-portfolio-v01.git
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To download: Simply click on the download button on the repository on browser and extract.
 
-### `npm run eject`
+Or you can just click on the link below to see the deployed app.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+https://mjtic.github.io/mj-portfolio-v01/
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Usage
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+You can simply run the app by opening the github pages link below.
 
-## Learn More
+https://mjtic.github.io/mj-portfolio-v01/
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Credits
 
-### Code Splitting
+Thank you, Sharlee, for invaluable UI/UX ideas, your work never stops to amaze me. More importantly, I want to express my gratitude to my friend, Youngjoon, for consistently inspiring and motivating me. 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## Collaboration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Please email me for collaborating ideas.
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Questions
 
-### Advanced Configuration
+Please email me or find me on Github for any questions or issues.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Find me on Github: [jyoungjoon](https://github.com/jyoungjoon)
 
-### Deployment
+You can also contact me at lifescriptified@gmail.com
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
