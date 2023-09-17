@@ -62,6 +62,4 @@ Please email me or find me on Github for any questions or issues.
 
 Find me on Github: [mjtic](https://github.com/mjtic)
 
-You can also contact me at lifescriptified@gmail.com
-
 ---
