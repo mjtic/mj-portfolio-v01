@@ -12,26 +12,12 @@ const StyledProject = styled.section`
     margin: 0 auto;
 `
 const StyledProjectWrapper = styled.div`
-    width: 80%;
+    width: 90%;
     height: 100%;
     top: 0;
     margin: 0 auto;
     position:fixed;
-    @media ${device.laptop}{
-        width: 780px;
-    };
-    @media ${device.tabletL}{
-        width: 680px;
-    };
-    @media ${device.tabletM}{
-        width: 610px;
-    };
-    @media ${device.tabletS}{
-        width: 600px;
-    }
-    @media ${device.mobileL}{
-        width: 280px;
-    }
+
 `;
 
 const StyledDiv = styled.div`
@@ -53,13 +39,18 @@ const StyledTitlePage = styled.div`
     height: 50%;
     background-position: center;
     margin: 0 auto;
+    @media ${device.laptop}{
+        width: 900px;
+        height: 500px;
+    };
+    @media ${device.tabletL}{
+        width: 700px;
+        height: 400px;
+    };
+    
     @media ${device.mobileL}{
-        width: 220px;
-        height: 300px;
-        width:260px;
-        max-width: 280px;
+        width: 300px;
         height: 200px;
-        max-height: 320px;
     }
 `
 const StyledProjectHeading = styled.h1`
@@ -77,14 +68,16 @@ justify-content: space-between;
 @media ${device.tabletL}{
     font-size: 45px;
 };
+
 @media ${device.tabletM}{
     font-size: 41px;
 };
 @media ${device.tabletS}{
-    font-size: 43px;
+    font-size: 38px;
 };
 @media ${device.mobileL}{
-    font-size: 20px;
+    font-size: 17px;
+    letter-spacing: 5px;
 }
 &::before{
     content: '';
@@ -116,6 +109,10 @@ const StyledDemo = styled.a`
     color: inherit;
     position: relative;
     display: inline-block;
+    @media${device.mobileL}{
+        font-size: 10px;
+        letter-spacing: 3px;
+    };
     &:hover{
        transform: translateY(-1rem);
        transition: transform 0.5s ease-out;
@@ -126,6 +123,10 @@ const StyledCode = styled.a`
     color: inherit;
     position: relative;
     display: inline-block;
+    @media${device.mobileL}{
+        font-size: 10px;
+        letter-spacing: 3px;
+    };
     &:hover{
         transform: translateY(-1rem);
         transition: transform 0.5s ease-out;
@@ -160,22 +161,37 @@ const StyledProjectSummary1 = styled.div`
 
 const StyledProjectCatergory = styled.p`
 font-size: 3rem;
-letter-spacing: 1rem;
+letter-spacing: 0.5rem;
 display: flex;
 flex-wrap: wrap;
 @media ${device.laptop}{
     font-size: 20px;
-}
+};
+@media ${device.tabletL}{
+    font-size: 17px;
+};
+@media ${device.tabletM}{
+    font-size: 16px;
+};
 @media ${device.mobileL}{
     font-size: 12px;
-}
+};
 `
 const StyledProjectYear = styled.p`
 font-size: 3rem;
-letter-spacing: 1rem;
+letter-spacing: 0.5rem;
+
 @media ${device.laptop}{
     font-size: 20px;
-}
+};
+@media ${device.tabletL}{
+    font-size: 17px;
+
+};
+@media ${device.tabletM}{
+    font-size: 16px;
+};
+
 @media ${device.mobileL}{
     font-size: 12px;
 }
@@ -191,13 +207,21 @@ const StyledProjectSummary2 = styled.div`
 const ProjectSummary = styled.div`
 font-size: 3rem;
 font-family: 'PT Sans Narrow', sans-serif;
-letter-spacing: 1rem;
+letter-spacing: 0.8rem;
+word-spacing: 0.1rem;
 @media ${device.laptop}{
     font-size: 20px;
-    hypens: auto;
+    hypen: auto;
+};
+@media ${device.tabletL}{
+    font-size: 17px;
+};
+@media ${device.tabletM}{
+    font-size: 16px;
 };
 @media ${device.mobileL}{
-    font-size: 12px;
+    font-size: 13px;
+    letter-spacing: 2px;
 }   
 `
 //Below are pictures
@@ -207,8 +231,9 @@ height: 100rem;
 display: flex;
 flex-direction: column;
 align-items: center;
-margin: 0 auto;
+margin: 0 auto 5rem auto;
 gap: 5rem;
+
 
 @media ${device.laptop}{
     width: 100%;
@@ -271,9 +296,6 @@ function Project({projectLists, currentProject, setNavMenu}) {
 
                     <StyledProjectSpanWrapper>             
                         <StyledProjectHeading>{project.ProjectSummary.Title}<AnchorWrapper><StyledDemo href={project.ProjectURL.Demo} >&#8599;DEMO</StyledDemo><StyledCode href={project.ProjectURL.Code}>&#8599;CODE</StyledCode></AnchorWrapper>
-                                
-                                
-
                         </StyledProjectHeading>
                     </StyledProjectSpanWrapper>
                        

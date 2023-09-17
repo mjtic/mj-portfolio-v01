@@ -24,6 +24,9 @@ const StyledAboutGridWrapper = styled.div`
         justify-content: center;
         height: auto;
         margin: 0 auto;
+    };
+    @media ${device.mobileL}{
+        position: relative;
     }
 `
 const StyledAboutGridLeft = styled.div`
@@ -60,21 +63,18 @@ const StyledAboutGridLeft = styled.div`
         width: 80%;
     };
     @mdeia ${device.tabletS}{
-        height: 40%;
+        height: 50%;
         width: 60%;
     };
     @media ${device.mobileL}{
         height: 80%;
         width: 75%;
+        position: absolute;
     };
     @media${device.mobileM}{
        width: 80%;
         height: 90%;
     };
-    @media screen and (max-width: 320px){
-        width: 60%;
-        height: 100%;
-    };    
 `
 
 const StyledAboutGridRight = styled.img`
@@ -113,19 +113,11 @@ const StyledAboutGridRight = styled.img`
     @media screen and (max-width: 1280px){
         height: 45%;
         width: 55%;
-        background: cover;
     };
-    @media screen and (max-width: 1280px) and (max-height:800px){
-        background: cover;
-        height: 35%;
-        width: 45%;
-        top: -170px;   
-    };
-
     @media screen and (max-width: 1112px){
         height: 35%;
         width: 45%;
-    }
+    };
     @media ${device.laptop}{
         height: 35%;
         width: 45%;
@@ -139,8 +131,8 @@ const StyledAboutGridRight = styled.img`
         top: 0;
         border-radius: 15px 15px 15px 15px;
     };
-    @media screen and (max-width:320px){
-        top: -100px;
+    @media ${device.mobileL}{
+        top: -1000px;
     };
     `
 

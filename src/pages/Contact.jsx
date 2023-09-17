@@ -15,6 +15,15 @@ const StyledContactWrapper = styled.div`
     width: 80%;
     line-height: auto;
     margin-top: 18rem;
+    @media ${device.laptopL}{
+        margin-top: 110px;
+    };
+    @media ${device.mobileL}{
+        margin-top: 140px;
+    };
+    @media ${device.mobileM}{
+        margin-top: 100px;
+    }
 `
 const StyledContactHeading = styled.h1`
     color: #225062;

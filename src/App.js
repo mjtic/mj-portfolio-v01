@@ -42,14 +42,12 @@ const GlobalStyle = createGlobalStyle`
   };
   @media ${device.mobileM}{
     font-size: 27%;
-  }
+  };
   @media ${device.mobileS}{
     font-size: 24%;
-  }
+  };
 
-
-
-  }&::-webkit-scrollbar{
+  &::-webkit-scrollbar{
     width:0;
     height:0;
   }
