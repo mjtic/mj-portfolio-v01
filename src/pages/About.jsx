@@ -62,7 +62,7 @@ const StyledAboutGridLeft = styled.div`
         height: 40%;
         width: 80%;
     };
-    @mdeia ${device.tabletS}{
+    @media ${device.tabletS}{
         height: 50%;
         width: 60%;
     };
